@@ -1,10 +1,67 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>lhxyq, blog</title>
-	</head>
-  <body>
-      <h1 align="center">hello xyq!this is my first blog.</h1>
-  </body>
+<head>
+<meta charset="utf-8">
+<title>lhxyq,blog</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+</head>
+<body>
+<html>
+<head>
+<style type="text/css">
+body,ul,li{margin:0;padding:0;}
+.grid_wrapper{
+	width: 650px;
+	height: 650px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.grid{
+	margin-left: 5px;
+	margin-top: 5px;
+	list-style-type:none;
+}
+.grid:after{
+	content: ".";
+	display: block;
+	line-height: 0;
+	width:0;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+	overflow: hidden;
+}
+.grid li{float:left;line-height: 50px;}
+.grid li a,.grid li a:visited{
+	display:block;
+	border: 5px solid #ccc;
+	width: 100px;
+	height: 100px;
+	text-align: center;
+	margin-left: -5px;
+	margin-top: -5px;
+	position: relative;
+	z-index: 1;
+}
+.grid li a:hover{
+	border-color: #f00;
+	z-index: 2;
+}
+</style>
+</head>
+<body>
+<div class="grid_wrapper">
+	<ul class="grid">
+		<li><img src="img/head.jpg"></li>
+		<li><img src="img/head.jpg"></li>
+		<li><img src="img/head.jpg"></li>
+		<li><img src="img/head.jpg"></li>
+		<li><img src="img/head.jpg"></li>
+		<li><img src="img/head.jpg"></li>
+		<li><img src="img/head.jpg"></li>
+		<li><img src="img/head.jpg"></li>
+		<li><img src="img/head.jpg"></li>
+	</ul>
+</div>
+</body>
 </html>
-  
