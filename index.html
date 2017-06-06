@@ -18,7 +18,7 @@ body,ul,li{margin:0;padding:0;}
 }
 .grid{
 	margin-left: 100px;
-	margin-top: 50px;
+	margin-top: -5px;
 	list-style-type:none;
 }
 .grid:after{
@@ -43,25 +43,120 @@ body,ul,li{margin:0;padding:0;}
 	position: relative;
 	z-index: 1;
 }
-.grid li a:hover{
+.grid li img:hover{
 	border-color: #f00;
 	z-index: 2;
 }
 </style>
 </head>
 <body bgcolor="black">
+<h1 align="center"  style="color:white">向雅琴(I LIKE YOU)，生日快乐</h1>
 <div class="grid_wrapper">
+    
 	<ul class="grid">
-		<li><img src="img/1.jpg" width="165" height="165"></li>
-		<li><img src="img/2.jpg" width="165" height="165"></li>
-		<li><img src="img/3.jpg" width="165" height="165"></li>
-		<li><img src="img/4.jpg" width="165" height="165"></li>
+		<li><img src="img/1.jpg" width="165" height="165" id="one"></li>
+		<li><img src="img/2.jpg" width="165" height="165" id="two"></li>
+		<li><img src="img/3.jpg" width="165" height="165" id="three"></li>
+		<li><img src="img/4.jpg" width="165" height="165" id="four"></li>
 		<li><img src="img/heart.jpg" width="165" height="165"></li>
-		<li><img src="img/5.jpg" width="165" height="165"></li>
-		<li><img src="img/6.jpg" width="165" height="165"></li>
-		<li><img src="img/7.jpg" width="165" height="165"></li>
-		<li><img src="img/8.jpg" width="165" height="165"></li>
+		<li><img src="img/5.jpg" width="165" height="165" id="five"></li>
+		<li><img src="img/6.jpg" width="165" height="165" id="six"></li>
+		<li><img src="img/7.jpg" width="165" height="165" id="seven"></li>
+		<li><img src="img/8.jpg" width="165" height="165" id="eight"></li>
 	</ul>
 </div>
 </body>
+<script>
+	 var a = 1;
+	 function one() {
+		if (a == 8)
+			a = 0;
+		a++;
+		var e = document.getElementById("one");
+		
+		e.src = "img/" + a + ".jpg";
+	 }
+	 
+	 var b = 2;
+	 function two() {
+		if (b == 8)
+			b = 0;
+		b++;
+		var e = document.getElementById("two");
+		
+		e.src = "img/" + b + ".jpg";
+	 }
+	 
+	 var c = 3;
+	 function three() {
+		if (c == 8)
+			c = 0;
+		c++;
+		var e = document.getElementById("three");
+		
+		e.src = "img/" + c + ".jpg";
+	 }
+	 
+	 var f = 4;
+	 function four() {
+		if (f == 8)
+			f = 0;
+		f++;
+		var e = document.getElementById("four");
+		
+		e.src = "img/" + f + ".jpg";
+	 }
+	 
+	 var g = 5;
+	 function five() {
+		if (g == 8)
+			g = 0;
+		g++;
+		var e = document.getElementById("five");
+		
+		e.src = "img/" + g + ".jpg";
+	 }
+	 
+	 var h = 6;
+	 function six() {
+		if (h == 8)
+			h = 0;
+		h++;
+		var e = document.getElementById("six");
+		
+		e.src = "img/" + h + ".jpg";
+	 }
+	 
+	 var i = 7;
+	 function seven() {
+		if (i == 8)
+			i = 0;
+		i++;
+		var e = document.getElementById("seven");
+		
+		e.src = "img/" + i + ".jpg";
+	 }
+	 
+	 var j = 8;
+	 function eight() {
+		if (j == 8)
+			j = 0;
+		j++;
+		var e = document.getElementById("eight");
+		
+		e.src = "img/" + j + ".jpg";
+	 }
+	 
+     function change() {
+		one();
+		two();
+		three();
+		four();
+		five();
+		six();
+		seven();
+		eight();
+	 }
+    setInterval(change,2000);
+</script
 </html>
