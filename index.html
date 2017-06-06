@@ -58,7 +58,7 @@ body,ul,li{margin:0;padding:0;}
 		<li><img src="img/2.jpg" width="165" height="165" id="two"></li>
 		<li><img src="img/3.jpg" width="165" height="165" id="three"></li>
 		<li><img src="img/4.jpg" width="165" height="165" id="four"></li>
-		<li><img src="img/heart.jpg" width="165" height="165"></li>
+		<li><img src="img/heart.jpg" width="165" height="165" id="love"></li>
 		<li><img src="img/5.jpg" width="165" height="165" id="five"></li>
 		<li><img src="img/6.jpg" width="165" height="165" id="six"></li>
 		<li><img src="img/7.jpg" width="165" height="165" id="seven"></li>
@@ -147,6 +147,8 @@ body,ul,li{margin:0;padding:0;}
 		e.src = "img/" + j + ".jpg";
 	 }
 	 
+	 var count = 0;
+	 
      function change() {
 		one();
 		two();
@@ -156,6 +158,16 @@ body,ul,li{margin:0;padding:0;}
 		six();
 		seven();
 		eight();
+		
+		var love = document.getElementById("love");
+		if (count == 8) {
+			count = 0;
+			love.src = "img/love.jpg";
+		}else {
+		    love.src ="img/heart.jpg";
+		}
+			
+		count++;
 	 }
     setInterval(change,2000);
 </script
